@@ -26,11 +26,15 @@ module.exports = function(defaults) {
   app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
   app.import('bower_components/Chart.StackedBar.js/src/Chart.StackedBar.js');
 
-  var extraAssets = new Funnel('bower_components/bootstrap/dist/fonts/', {
+  var fonts = new Funnel('bower_components/bootstrap/dist/fonts/', {
     srcDir: '/',
     include: ['**/*.woff*', '**/stylesheet.css'],
     destDir: '/fonts'
   });
 
-  return app.toTree(extraAssets);
+  var sampleJSON = new Funnel('JSON', {
+    destDir: '/JSON'
+  });
+
+  return app.toTree([fonts, sampleJSON]);
 };

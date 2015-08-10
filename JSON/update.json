@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "title": "Games of Bones (Active vs Abandoned)",
+  "type": "Line",
+  "legend": true,
+  "size": "4",
+  "chartData": {
+    "labels": ["January", "February"],
+    "datasets": [
+        {
+            "label": "Active",
+            "data": [0, 0]
+        },
+        {
+            "label": "Abandoned",
+            "data": [100, 500]
+        }
+    ]
+  }
+}

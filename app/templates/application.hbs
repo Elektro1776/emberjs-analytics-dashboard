@@ -5,15 +5,13 @@
   <div class="content row">
     <div class="col-md-12">
 
-      {{#each sortedModel}}
-      <div class="clear col-md-{{data.size}}" id="{{data.id}}">
+      {{#each model}}
+      <div class="clear col-md-{{data.size}}" id="{{id}}">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
               <span>{{data.title}}</span>
-              <button type="button" name="button" class="btn-no-style pull-right refresh">
-                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
-              </button>
+              {{refresh-chart data=this updateChartData="setChartData"}}
               <div class="tools">
                 <a data-toggle="collapse" class="" data-target="#top-watched" href="#">
                   <i class="fa fa-angle-down"></i>
