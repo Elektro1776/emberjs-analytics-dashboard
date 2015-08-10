@@ -1,0 +1,52 @@
+.panel, .panel-body {
+  position: relative;
+
+  .panel-title {
+    .btn {
+      margin-top: -6px;
+    }
+  }
+
+}
+
+.default-chart {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 300px;
+}
+
+.chart-parent {
+  // legend
+  ul {
+    position: absolute;
+    padding: 5px;
+    top: 10px;
+    right: 10px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    li {
+      font: {
+        size: 11px;
+      }
+      span{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+
+  }
+}
+
+.btn-circle {
+    border-radius: 25px !important;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+}
