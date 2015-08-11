@@ -7,20 +7,34 @@
 
       {{#each model}}
       <div class="clear col-md-{{data.size}}" id="{{id}}">
-        <div class="panel panel-default">
+        <div class="panel panel-default panel-chart">
           <div class="panel-heading">
             <h4 class="panel-title">
               <span>{{title}}</span>
-              {{refresh-chart data=this updateChartData="setChartData"}}
               <div class="tools">
-                <a data-toggle="collapse" class="" data-target="#top-watched" href="#">
-                  <i class="fa fa-angle-down"></i>
-                </a>
+                {{refresh-chart data=this updateChartData="setChartData"}}
+                <!-- Single button -->
+                <div class="btn-group">
+                  <button type="button" class="btn-no-style dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="glyphicon glyphicon-cog"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="input">{{input type="text" classNames="form-control input-sm" placeholder="Search..."}}</li>
+                    <li role="separator" class="divider"></li>
+                    <li class="input">
+                      {{date-picker data=this type="button"}}
+                    </li>
+                  </ul>
+                </div>
               </div>
             </h4>
           </div>
           <div id="top-watched" class="panel-collapse collapse in">
             <div class="panel-body">
+              <small class="last-updated-time">{{lastUpdatedDate}}</small>
               {{ember-chart class='default-chart' id=id type=type options=options data=chartData legend=legend width=200 height=200}}
             </div>
           </div>

@@ -15,6 +15,10 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+$('body').on('click focus change', 'input', function(e){
+  e.stopPropagation();
+});
+
 export default App;
 
 

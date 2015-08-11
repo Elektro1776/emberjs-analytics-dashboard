@@ -2,8 +2,34 @@
   position: relative;
 
   .panel-title {
-    .btn {
-      margin-top: -6px;
+    color: #5E5E5E;
+    font: {
+      weight: normal;
+    }
+  }
+
+  .tools{
+    float: right;
+    margin-top: -1px;
+
+    li.input {
+      margin: 0 10px;
+    }
+
+   & > button {
+      color: #999;
+      padding: 0 2px;
+      &:hover {
+        color: #777;
+      }
+    }
+    i {
+      font:{
+        size:12px;
+      }
+    }
+    .btn-group{
+      vertical-align: inherit;
     }
   }
 
@@ -13,6 +39,27 @@
   width: 100% !important;
   height: 100% !important;
   max-height: 300px;
+}
+
+small.last-updated-time {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  color: #999;
+  font:{
+    size: 11px;
+  }
+}
+
+.panel-chart {
+  .panel-body {
+    padding-top: 30px;
+  }
+
+  .btn-group {
+
+  }
+
 }
 
 .chart-parent {
@@ -40,13 +87,4 @@
     }
 
   }
-}
-
-.btn-circle {
-    border-radius: 25px !important;
-}
-
-.btn-no-style {
-    background: none;
-    border: none;
 }

@@ -24,7 +24,11 @@ module.exports = function(defaults) {
   var Funnel = require('broccoli-funnel');
 
   app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+  app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
   app.import('bower_components/Chart.StackedBar.js/src/Chart.StackedBar.js');
+  app.import('bower_components/moment/min/moment.min.js');
+  app.import('bower_components/bootstrap-daterangepicker/daterangepicker.css');
+  app.import('bower_components/bootstrap-daterangepicker/daterangepicker.js');
 
   var fonts = new Funnel('bower_components/bootstrap/dist/fonts/', {
     srcDir: '/',

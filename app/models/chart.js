@@ -6,7 +6,8 @@ var Data = DS.Model.extend({
   chartData: DS.attr('object'),
   legend: DS.attr('boolean'),
   size: DS.attr('string'),
-  options: DS.attr('object')
+  options: DS.attr('object'),
+  lastUpdatedDate: DS.attr()
 });
 
 var colors = {
