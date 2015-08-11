@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "title": "Top 5 Watched",
+  "type": "Line",
+  "legend": true,
+  "size": "4",
+  "chartData": {
+    "labels": ["Game of Bones", "True Detective", "Silicon Valley", "Ballers", "The Brink"],
+    "datasets": [
+      {
+        "label": "completed!",
+        "data": [10, 49, 90, 11, 6]
+      },
+      {
+        "label": "started!",
+        "data": [21, 40, 30, 9, 66]
+      }
+    ]
+  }
+}

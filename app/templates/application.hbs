@@ -10,7 +10,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <span>{{data.title}}</span>
+              <span>{{title}}</span>
               {{refresh-chart data=this updateChartData="setChartData"}}
               <div class="tools">
                 <a data-toggle="collapse" class="" data-target="#top-watched" href="#">
@@ -21,7 +21,7 @@
           </div>
           <div id="top-watched" class="panel-collapse collapse in">
             <div class="panel-body">
-              {{ember-chart class='default-chart' id=data.id type=data.type options=options data=data.chartData legend=data.legend width=200 height=200}}
+              {{ember-chart class='default-chart' id=id type=type options=options data=chartData legend=legend width=200 height=200}}
             </div>
           </div>
         </div>
