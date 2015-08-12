@@ -1,0 +1,24 @@
+<div class="chart-config">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="asset" class="col-sm-3 control-label">Find Asset</label>
+      <div class="col-sm-9">
+        {{input type="text" classNames="form-control input-sm" placeholder="Search..."}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="dates" class="col-sm-3 control-label">Select Dates</label>
+      <div class="col-sm-9">
+        {{date-picker data=this type="button"}}
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-12 text-right">
+        <button type="button" class="btn btn-success btn-sm" name="button">Update Chart</button>
+      </div>
+    </div>
+  </form>
+  <span class="expand-config-options">
+    <span>__</span>
+  </span>
+</div>

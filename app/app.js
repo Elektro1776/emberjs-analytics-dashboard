@@ -15,11 +15,11 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
-$('body').on('click focus change', 'input', function(e){
+export default App;
+
+Ember.$('body').on('click focus change', 'input', function(e){
   e.stopPropagation();
 });
-
-export default App;
 
 
 window.Chart.defaults.global = {

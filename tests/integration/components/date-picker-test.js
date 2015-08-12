@@ -6,21 +6,13 @@ moduleForComponent('date-picker', 'Integration | Component | date picker', {
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
+  assert.expect(1);
 
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
   this.render(hbs`{{date-picker}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'Select Date Range');
 
-  // Template block usage:
-  this.render(hbs`
-    {{#date-picker}}
-      template block text
-    {{/date-picker}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });
